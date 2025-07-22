@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia dos Pais 2025 | Lojas Space - Eletrônicos e Celulares São Luís Montes Belos</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* HERO SECTION */
+        .hero { 
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white; 
+            padding: 60px 0; 
+            text-align: center; 
+        }
+        .hero h1 { 
+            font-size: 3em; 
+            margin-bottom: 20px; 
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .hero p { 
+            font-size: 1.3em; 
+            margin-bottom: 30px; 
+            opacity: 0.9;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #25D366;
+            color: white;
+            padding: 18px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        }
+        .cta-button:hover {
+            background: #128C7E;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+        }
+        
+        /* TRADIÇÃO BADGE */
+        .tradicao-badge {
+            background: #FFD700;
+            color: #1e3c72;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        /* PRODUTOS SECTION */
+        .produtos {
+            padding: 60px 0;
+            background: #f8f9fa;
+        }
+        .produtos h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 50px;
+            color: #1e3c72;
+        }
+        .produtos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .produto-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .produto-card:hover {
+            transform: translateY(-5px);
+        }
+        .produto-icon {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+        .produto-card h3 {
+            color: #1e3c72;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        .produto-card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        /* DIFERENCIAIS SECTION */
+        .diferenciais {
+            padding: 60px 0;
+            background: white;
+        }
+        .diferenciais h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 50px;
+            color: #1e3c72;
+        }
+        .diferenciais-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        .diferencial-item {
+            text-align: center;
+            padding: 20px;
+        }
+        .diferencial-icon {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #25D366;
+        }
+        .diferencial-item h3 {
+            color: #1e3c72;
+            margin-bottom: 15px;
+        }
+
+        /* URGENCIA SECTION */
+        .urgencia {
+            background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        .urgencia h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .countdown {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        /* CONTATO SECTION */
+        .contato {
+            padding: 60px 0;
+            background: #1e3c72;
+            color: white;
+        }
+        .contato-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            align-items: center;
+        }
+        .contato-info h3 {
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+        .contato-item {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        .contato-item strong {
+            color: #FFD700;
+        }
+        .mapa {
+            text-align: center;
+        }
+
+        /* FOOTER */
+        .footer {
+            background: #0f1419;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        .footer p {
+            margin-bottom: 10px;
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-links a {
+            color: #25D366;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.2em;
+        }
+
+        /* BOTÃO FLUTUANTE WHATSAPP */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        /* RESPONSIVO */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2em; }
+            .hero p { font-size: 1.1em; }
+            .cta-button { padding: 15px 30px; font-size: 1em; }
+            .produtos h2, .diferenciais h2 { font-size: 2em; }
+            .urgencia h2 { font-size: 2em; }
+            .produtos-grid { grid-template-columns: 1fr; }
+            .diferenciais-grid { grid-template-columns: 1fr; }
+            .contato-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="container">
+        <div class="tradicao-badge">
+            ⭐ 23 ANOS DE TRADIÇÃO ⭐
+        </div>
+        <h1>🎁 DIA DOS PAIS 2025</h1>
+        <p>O presente perfeito para seu pai está aqui!<br>
+        Celulares e eletrônicos com a confiança das Lojas Space</p>
+        <a href="https://wa.me/5564981368081?text=Olá! Vim pelo Google e quero saber sobre os produtos para o Dia dos Pais!" class="cta-button">
+            📱 FALAR NO WHATSAPP AGORA
+        </a>
+    </div>
+</section>
+
+<!-- PRODUTOS SECTION -->
+<section class="produtos">
+    <div class="container">
+        <h2>🎯 Presentes Que Todo Pai Vai Amar</h2>
+        <div class="produtos-grid">
+            <div class="produto-card">
+                <div class="produto-icon">📱</div>
+                <h3>Smartphones</h3>
+                <p>Últimos lançamentos das melhores marcas. Tecnologia de ponta para pais modernos!</p>
+                <a href="https://wa.me/5564981368081?text=Quero saber sobre smartphones para o Dia dos Pais!" class="cta-button">Ver Modelos</a>
+            </div>
+            
+            <div class="produto-card">
+                <div class="produto-icon">🎧</div>
+                <h3>Fones e Acessórios</h3>
+                <p>Som de qualidade e acessórios que fazem a diferença no dia a dia.</p>
+                <a href="https://wa.me/5564981368081?text=Tenho interesse em fones e acessórios!" class="cta-button">Ver Opções</a>
+            </div>
+            
+            <div class="produto-card">
+                <div class="produto-icon">⚡</div>
+                <h3>Eletrônicos</h3>
+                <p>Gadgets e eletrônicos úteis para facilitar a vida do seu pai.</p>
+                <a href="https://wa.me/5564981368081?text=Quero conhecer os eletrônicos disponíveis!" class="cta-button">Conhecer</a>
+            </div>
+        </div>
+        
+        <div style="text-align: center;">
+            <a href="https://wa.me/5564981368081?text=Olá! Quero ver TODOS os produtos para o Dia dos Pais!" class="cta-button" style="font-size: 1.3em; padding: 20px 50px;">
+                🛍️ VER TODOS OS PRODUTOS
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- DIFERENCIAIS SECTION -->
+<section class="diferenciais">
+    <div class="container">
+        <h2>🏆 Por Que Escolher as Lojas Space?</h2>
+        <div class="diferenciais-grid">
+            <div class="diferencial-item">
+                <div class="diferencial-icon">🏪</div>
+                <h3>23 Anos de Tradição</h3>
+                <p>Desde 2002 servindo São Luís Montes Belos com qualidade e confiança.</p>
+            </div>
+            
+            <div class="diferencial-item">
+                <div class="diferencial-icon">📍</div>
+                <h3>Localização Privilegiada</h3>
+                <p>Av. Hermógenes Coelho, fácil acesso no Setor Inicial. Venha nos visitar!</p>
+            </div>
+            
+            <div class="diferencial-item">
+                <div class="diferencial-icon">🤝</div>
+                <h3>Atendimento Personalizado</h3>
+                <p>Nossa equipe te ajuda a escolher o presente perfeito para seu pai.</p>
+            </div>
+            
+            <div class="diferencial-item">
+                <div class="diferencial-icon">⚡</div>
+                <h3>Entrega Rápida</h3>
+                <p>Produtos disponíveis para retirada imediata ou entrega na região.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- URGÊNCIA SECTION -->
+<section class="urgencia">
+    <div class="container">
+        <h2>⏰ Não Deixe Para a Última Hora!</h2>
+        <div class="countdown">
+            <strong>Dia dos Pais: 10 de Agosto</strong><br>
+            Garanta já o presente do seu pai!
+        </div>
+        <p style="font-size: 1.2em; margin-bottom: 30px;">
+            Nossos melhores produtos estão saindo rápido!<br>
+            Fale conosco agora e reserve o seu.
+        </p>
+        <a href="https://wa.me/5564981368081?text=URGENTE! Quero garantir o presente do meu pai para o Dia dos Pais!" class="cta-button" style="background: white; color: #FF6B6B; font-size: 1.3em; padding: 20px 50px;">
+            🚨 GARANTIR MEU PRESENTE AGORA
+        </a>
+    </div>
+</section>
+
+<!-- CONTATO SECTION -->
+<section class="contato">
+    <div class="container">
+        <div class="contato-grid">
+            <div class="contato-info">
+                <h3>📍 Venha Visitar as Lojas Space!</h3>
+                <div class="contato-item">
+                    <strong>Endereço:</strong><br>
+                    Av. Hermógenes Coelho, 2251<br>
+                    Setor Inicial - CEP: 76050-375<br>
+                    São Luís de Montes Belos - GO
+                </div>
+                <div class="contato-item">
+                    <strong>WhatsApp:</strong><br>
+                    (64) 98136-8081
+                </div>
+                <div class="contato-item">
+                    <strong>Horário de Funcionamento:</strong><br>
+                    Segunda a Sexta: 8h às 18h<br>
+                    Sábado: 8h às 13h<br>
+                    Domingo: Fechado
+                </div>
+                <div style="margin-top: 30px;">
+                    <a href="https://wa.me/5564981368081?text=Quero mais informações sobre localização e horários!" class="cta-button">
+                        💬 FALAR NO WHATSAPP
+                    </a>
+                </div>
+            </div>
+            
+            <div class="mapa">
+                <h3>🗺️ Nossa Localização</h3>
+                <p style="margin-bottom: 20px;">Localização privilegiada na Av. Hermógenes Coelho!</p>
+                <div style="background: rgba(255,255,255,0.1); padding: 40px; border-radius: 10px;">
+                    <p>📍 Setor Inicial - São Luís de Montes Belos</p>
+                    <p>Fácil acesso e estacionamento</p>
+                    <p style="margin-top: 15px;">
+                        <a href="https://maps.google.com/?q=Av.+Hermógenes+Coelho,+2251,+São+Luís+de+Montes+Belos"  style="color: #FFD700; text-decoration: none;">
+                            🗺️ Ver no Google Maps
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <p><strong>Lojas Space - 23 Anos de Tradição em São Luís de Montes Belos</strong></p>
+        <p>Eletrônicos e Celulares | Dia dos Pais 2025</p>
+        <div class="social-links">
+            <a href="https://wa.me/5564981368081">📱 WhatsApp</a>
+            <a href="https://instagram.com/lojasspaceslmb" >📸 Instagram</a>
+        </div>
+        <p style="margin-top: 20px; font-size: 0.9em; opacity: 0.7;">
+            © 2025 Lojas Space - Todos os direitos reservados
+        </p>
+    </div>
+</footer>
+
+<!-- BOTÃO FLUTUANTE WHATSAPP -->
+<a href="https://wa.me/5564981368081?text=Olá! Vim pelo site das Lojas Space e quero saber sobre os produtos para o Dia dos Pais!" class="whatsapp-float" >
+    📱
+</a>
+
+</body>
+</html>
